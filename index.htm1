@@ -1,2 +1,10 @@
-HLZA
-welcome 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HLZA</title>
+</head>
+<body>
+  <h1>HLZA Template</h1>
+  <p>System Active</p>
+</body>
+</html>

@@ -143,26 +143,50 @@ Weight: <span id="weight"></span>
 
 <script>
 const code = new URLSearchParams(window.location.search).get("code");
+  <div style="text-align:center; font-size:22px; font-weight:bold;">
+Code: <span id="code"></span>
+</div>
 
-if (code == "HLZA0001") {
-    document.getElementById("code").innerText = "HLZA0001";
-    document.getElementById("weight").innerText = "G7";
-}
+<div style="text-align:center; font-size:20px; margin-top:10px;" id="info"></div>
 
-else if (code == "HLZA0002") {
-    document.getElementById("code").innerText = "HLZA0002";
-    document.getElementById("weight").innerText = "G6";
-}
+<script>
+const params = new URLSearchParams(window.location.search);
+const code = params.get("code");
 
-else {
-    document.getElementById("code").innerText = "NO CODE";
-    document.getElementById("weight").innerText = "-";
+const stones = {
+    "HLZA0001": {
+        weight: "G7",
+        size: "2.5",
+        color: "Red",
+        auth: "Original",
+        hard: "Hard"
+    },
+    "HLZA0002": {
+        weight: "G6",
+        size: "2",
+        color: "Red",
+        auth: "Original",
+        hard: "Hard"
+    }
+};
+
+if (stones[code]) {
+
+    const s = stones[code];
+
+    document.getElementById("code").innerText = code;
+
+    document.getElementById("info").innerHTML = 
+        Weight: ${s.weight}<br>
+        Size: ${s.size}<br>
+        Color: ${s.color}<br>
+        Authenticity: ${s.auth}<br>
+        Hardness: ${s.hard}
+    ;
+
+} else {
+    document.getElementById("code").innerText = "INVALID CODE";
 }
 </script>
-"HLZA0002": {
-    weight: "G6",
-    size: "2",
-    color: "Red",
-    auth: "Original",
-    hard: "Hard"
-}
+    
+        

@@ -126,38 +126,42 @@ body {
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini Logo</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Crop Center</title>
 
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+<style>
+  body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+  }
 
-    .logo {
-      width: 20px;   /* 👈 خیلی کوچک (حدود 2×2 سانت) */
-      height: 20px;
-      overflow: hidden;
-      border-radius: 4px; /* اگر خواستی مربعی کامل: 0 */
-    }
+  .box{
+    width:20px;   /* 👈 خیلی کوچک (2×2 سانتی‌متر حدودی) */
+    height:20px;
+    overflow:hidden;
+  }
 
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;        /* 👈 فقط مرکز عکس */
-      object-position: center;   /* 👈 فوکوس وسط */
-      transform: scale(2);      /* 👈 زوم روی مرکز برای واضح‌تر شدن */
-    }
-  </style>
+  .box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;       /* 👈 فقط مرکز عکس */
+    object-position:center;  /* 👈 دقیق وسط */
+    transform:scale(3);     /* 👈 زوم برای اینکه فقط بخش مرکزی بیاد */
+  }
+</style>
+
 </head>
 
 <body>
 
-  <div class="logo">
-    <img src="IMG_20260612_203631_847.jpeg
+<div class="box">
+  <img src="IMG_20260612_203631_847.jpeg" />
+</div>
+
+</body>
+</html>

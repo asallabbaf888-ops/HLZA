@@ -128,7 +128,7 @@ body {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Logo Image</title>
+  <title>Mini Logo</title>
 
   <style>
     body {
@@ -141,18 +141,18 @@ body {
     }
 
     .logo {
-      width: 120px;        /* 👈 اندازه لوگو */
-      height: 120px;       /* 👈 مربع کامل */
-      border-radius: 20px; /* 👈 اگر دایره خواستی: 50% کن */
-      overflow: hidden;    /* 👈 فقط وسط عکس دیده میشه */
-      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      width: 20px;   /* 👈 خیلی کوچک (حدود 2×2 سانت) */
+      height: 20px;
+      overflow: hidden;
+      border-radius: 4px; /* اگر خواستی مربعی کامل: 0 */
     }
 
     .logo img {
       width: 100%;
       height: 100%;
-      object-fit: cover;      /* 👈 فقط بخش مرکزی عکس */
-      object-position: center; /* 👈 تمرکز وسط عکس */
+      object-fit: cover;        /* 👈 فقط مرکز عکس */
+      object-position: center;   /* 👈 فوکوس وسط */
+      transform: scale(2);      /* 👈 زوم روی مرکز برای واضح‌تر شدن */
     }
   </style>
 </head>
@@ -160,8 +160,4 @@ body {
 <body>
 
   <div class="logo">
-    <img src="IMG_20260612_203631_847.jpeg" alt="logo">
-  </div>
-
-</body>
-</html>
+    <img src="IMG_20260612_203631_

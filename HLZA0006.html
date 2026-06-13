@@ -123,7 +123,42 @@ body {
     font-weight: bold;
     color: #111;
     line-height: 1.8;
-<div class="stone-image">
-    <img src="IMG_20260601_000113.jpg?v=2" alt="Peridot Stone" width="250">
-</div> alt="Peridot Stone" width="250">
-</div>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Page</title>
+
+  <style>
+    /* حذف فاصله‌های پیش‌فرض */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* مهم‌ترین قسمت 👇 عکس رو بدون حاشیه پر می‌کنه */
+      filter: contrast(1.05) brightness(0.98);
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="IMG_20260612_203631_847.jpeg" alt="image"/>
+
+</body>
+</html>
